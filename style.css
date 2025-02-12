@@ -1,54 +1,55 @@
+/* 🌸 Make Background Romantic */
 html, body {
     height: 100vh;
     max-height: 100vh;
-    overflow: hidden; /* Prevents whole page scrolling */
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(to bottom, #ff4e50, #fc913a); /* Red-Orange Gradient */
+    color: white; /* Text color */
+    font-family: "Dancing Script", cursive; /* Romantic font */
 }
 
+/* ❤️ Styled Content Box */
 .container {
     max-height: 80vh;
     width: 90%;
     padding: 20px;
     overflow-y: auto;
-    
-    /* ❤️ Valentine Colors */
-    background: rgba(255, 182, 193, 0.8); /* Light pink */
+
+    /* Valentine Colors */
+    background: rgba(255, 182, 193, 0.9); /* Light pink */
     border: 3px solid red;
     
-    /* ❤️ Rounded Corners & Shadow */
+    /* Rounded & Glowing */
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
 
-    /* ❤️ Center Text & Fancy Font */
+    /* Center Text */
     text-align: center;
-    font-family: "Dancing Script", cursive;
-    font-size: 20px;
-    color: #8b0000; /* Dark red text */
+    font-size: 22px;
+    color: #8b0000; /* Dark red */
 }
 
-/* Make scrollbar look nice */
-.container::-webkit-scrollbar {
-    width: 8px;
-}
-
-.container::-webkit-scrollbar-thumb {
+/* ❤️ Cute Button */
+button {
     background-color: red;
-    border-radius: 5px;
-}
-
-/* Optional: Heart background */
-body {
-    background: url('https://img.freepik.com/free-vector/hearts-pattern-valentine-s-day-background_53876-116824.jpg') no-repeat center center fixed;
-    background-size: cover;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.3s;
 }
 
 button:hover {
     background-color: darkred;
+    transform: scale(1.1);
 }
 
-/* Floating Hearts */
+/* ❤️ Falling Hearts Animation */
 @keyframes fall {
     0% { transform: translateY(-10vh); opacity: 1; }
     100% { transform: translateY(100vh); opacity: 0; }
@@ -62,3 +63,12 @@ button:hover {
     opacity: 0;
 }
 
+/* ❤️ Fix Scrollbar to Look Nice */
+.container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 5px;
+}

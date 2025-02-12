@@ -8,13 +8,40 @@ html, body {
 }
 
 .container {
-    max-height: 80vh; /* Limits main content */
+    max-height: 80vh;
     width: 90%;
     padding: 20px;
-    overflow-y: auto; /* Enables scrolling INSIDE the container */
-    background: rgba(255, 255, 255, 0.2); /* Soft background */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    
+    /* ❤️ Valentine Colors */
+    background: rgba(255, 182, 193, 0.8); /* Light pink */
+    border: 3px solid red;
+    
+    /* ❤️ Rounded Corners & Shadow */
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+
+    /* ❤️ Center Text & Fancy Font */
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+    color: #8b0000; /* Dark red text */
+}
+
+/* Make scrollbar look nice */
+.container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 5px;
+}
+
+/* Optional: Heart background */
+body {
+    background: url('https://img.freepik.com/free-vector/hearts-pattern-valentine-s-day-background_53876-116824.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 button:hover {

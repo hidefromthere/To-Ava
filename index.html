@@ -7,12 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <audio autoplay loop>
+        <source src="love-song.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
     <div class="container">
         <h1>I Love You ❤️</h1>
         <p>Happy Valentine's Day, my love! 💕</p>
         <button onclick="showMessage()">Click for a Surprise</button>
         <p id="secret-message" style="display:none;">You mean the world to me! 🌎💖</p>
     </div>
+
+    <div id="hearts-container"></div>
+
     <script src="script.js"></script>
 </body>
 </html>

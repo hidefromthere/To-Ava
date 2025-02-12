@@ -9,13 +9,13 @@ html, body {
     /* Romantic Gradient */
     background: linear-gradient(to bottom, #ff4e50, #fc913a);
     color: white;
-    font-family: "Dancing Script", serif;
+    font-family: serif;
 }
 
 /* 💌 Love Message Box */
 .container {
     max-height: 80vh;
-    width: 50%;
+    width: 90%;
     padding: 20px;
     overflow-y: auto;
 

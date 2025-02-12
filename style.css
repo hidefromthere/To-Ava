@@ -1,4 +1,4 @@
-/* 💖 Fullscreen Background */
+/*  Fullscreen Background */
 html, body {
     height: 100vh;
     margin: 0;
@@ -12,7 +12,7 @@ html, body {
     font-family: serif;
 }
 
-/* 💌 Love Message Box */
+/*  Love Message Box */
 .container {
     max-height: 80vh;
     width: 90%;
@@ -33,7 +33,7 @@ html, body {
     color: #8b0000;
 }
 
-/* ❤️ Floating Hearts Animation */
+/*  Floating Hearts Animation */
 @keyframes fall {
     0% { transform: translateY(-10vh); opacity: 1; }
     100% { transform: translateY(100vh); opacity: 0; }
@@ -47,7 +47,7 @@ html, body {
     opacity: 0;
 }
 
-/* ❤️ Cute Button */
+/*  Cute Button */
 button {
     background-color: red;
     color: white;

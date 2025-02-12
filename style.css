@@ -1,4 +1,4 @@
-/* 🌸 Make Background Romantic */
+/* 💖 Beautiful Valentine Background */
 html, body {
     height: 100vh;
     max-height: 100vh;
@@ -6,33 +6,48 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom, #ff4e50, #fc913a); /* Red-Orange Gradient */
-    color: white; /* Text color */
-    font-family: "Dancing Script", cursive; /* Romantic font */
+    
+    /* Romantic Gradient */
+    background: linear-gradient(to bottom, #ff4e50, #fc913a);
+    color: white;
+    font-family: "Dancing Script", cursive;
 }
 
-/* ❤️ Styled Content Box */
+/* 💌 Center Content Box */
 .container {
     max-height: 80vh;
     width: 90%;
     padding: 20px;
     overflow-y: auto;
 
-    /* Valentine Colors */
-    background: rgba(255, 182, 193, 0.9); /* Light pink */
+    /* Soft Pink Background */
+    background: rgba(255, 182, 193, 0.9);
     border: 3px solid red;
     
-    /* Rounded & Glowing */
+    /* Rounded & Shadow */
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
 
     /* Center Text */
     text-align: center;
     font-size: 22px;
-    color: #8b0000; /* Dark red */
+    color: #8b0000;
 }
 
-/* ❤️ Cute Button */
+/* ❤️ Floating Hearts Animation */
+@keyframes fall {
+    0% { transform: translateY(-10vh); opacity: 1; }
+    100% { transform: translateY(100vh); opacity: 0; }
+}
+
+.heart {
+    position: absolute;
+    font-size: 25px;
+    animation: fall linear infinite;
+    opacity: 0;
+}
+
+/* ❤️ Buttons */
 button {
     background-color: red;
     color: white;
@@ -47,28 +62,4 @@ button {
 button:hover {
     background-color: darkred;
     transform: scale(1.1);
-}
-
-/* ❤️ Falling Hearts Animation */
-@keyframes fall {
-    0% { transform: translateY(-10vh); opacity: 1; }
-    100% { transform: translateY(100vh); opacity: 0; }
-}
-
-.heart {
-    position: absolute;
-    color: red;
-    font-size: 20px;
-    animation: fall linear infinite;
-    opacity: 0;
-}
-
-/* ❤️ Fix Scrollbar to Look Nice */
-.container::-webkit-scrollbar {
-    width: 8px;
-}
-
-.container::-webkit-scrollbar-thumb {
-    background-color: red;
-    border-radius: 5px;
 }

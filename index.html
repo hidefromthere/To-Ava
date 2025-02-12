@@ -7,10 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <audio autoplay loop>
+ <audio id="loveSong" loop>
     <source src="love-song.mp3" type="audio/mp3">
-    Your browser does not support the audio element.
 </audio>
+
+<button onclick="toggleMusic()">🎵 Play/Pause Music</button>
+
+<script>
+function toggleMusic() {
+    var audio = document.getElementById("loveSong");
+    if (audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
+    }
+}
+</script>
+
 
 
     <div class="container">
